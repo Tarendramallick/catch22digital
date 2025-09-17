@@ -1,0 +1,127 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated to Catch22Digital color palette: Navy Blue, Black, Grey, White */
+  --background: #ffffff; /* White */
+  --foreground: #000000; /* Black */
+  --card: #ffffff; /* White */
+  --card-foreground: #000000; /* Black */
+  --popover: #ffffff; /* White */
+  --popover-foreground: #000000; /* Black */
+  --primary: #004aad; /* Navy Blue */
+  --primary-foreground: #ffffff; /* White */
+  --secondary: #e5e7eb; /* Grey */
+  --secondary-foreground: #000000; /* Black */
+  --muted: #e5e7eb; /* Grey */
+  --muted-foreground: #000000; /* Black */
+  --accent: #004aad; /* Navy Blue */
+  --accent-foreground: #ffffff; /* White */
+  --destructive: #dc2626; /* Red for errors */
+  --destructive-foreground: #ffffff; /* White */
+  --border: #e5e7eb; /* Grey */
+  --input: #ffffff; /* White */
+  --ring: rgba(0, 74, 173, 0.5); /* Navy Blue with opacity */
+  --chart-1: #004aad; /* Navy Blue */
+  --chart-2: #000000; /* Black */
+  --chart-3: #e5e7eb; /* Grey */
+  --chart-4: #ffffff; /* White */
+  --chart-5: rgba(0, 74, 173, 0.7); /* Navy Blue variant */
+  --radius: 0.75rem;
+  --sidebar: #ffffff; /* White */
+  --sidebar-foreground: #000000; /* Black */
+  --sidebar-primary: #e5e7eb; /* Grey */
+  --sidebar-primary-foreground: #000000; /* Black */
+  --sidebar-accent: #004aad; /* Navy Blue */
+  --sidebar-accent-foreground: #ffffff; /* White */
+  --sidebar-border: #e5e7eb; /* Grey */
+  --sidebar-ring: rgba(0, 74, 173, 0.5); /* Navy Blue with opacity */
+}
+
+.dark {
+  --background: #000000; /* Black */
+  --foreground: #ffffff; /* White */
+  --card: #000000; /* Black */
+  --card-foreground: #ffffff; /* White */
+  --popover: #000000; /* Black */
+  --popover-foreground: #ffffff; /* White */
+  --primary: #004aad; /* Navy Blue */
+  --primary-foreground: #ffffff; /* White */
+  --secondary: #e5e7eb; /* Grey */
+  --secondary-foreground: #000000; /* Black */
+  --muted: rgba(229, 231, 235, 0.1); /* Grey with opacity */
+  --muted-foreground: #e5e7eb; /* Grey */
+  --accent: #004aad; /* Navy Blue */
+  --accent-foreground: #ffffff; /* White */
+  --destructive: #dc2626; /* Red for errors */
+  --destructive-foreground: #ffffff; /* White */
+  --border: rgba(229, 231, 235, 0.2); /* Grey with opacity */
+  --input: rgba(229, 231, 235, 0.1); /* Grey with opacity */
+  --ring: rgba(0, 74, 173, 0.5); /* Navy Blue with opacity */
+  --chart-1: #004aad; /* Navy Blue */
+  --chart-2: #ffffff; /* White */
+  --chart-3: #e5e7eb; /* Grey */
+  --chart-4: rgba(0, 74, 173, 0.7); /* Navy Blue variant */
+  --chart-5: rgba(229, 231, 235, 0.5); /* Grey variant */
+  --sidebar: #000000; /* Black */
+  --sidebar-foreground: #ffffff; /* White */
+  --sidebar-primary: #004aad; /* Navy Blue */
+  --sidebar-primary-foreground: #ffffff; /* White */
+  --sidebar-accent: rgba(229, 231, 235, 0.1); /* Grey with opacity */
+  --sidebar-accent-foreground: #ffffff; /* White */
+  --sidebar-border: rgba(229, 231, 235, 0.2); /* Grey with opacity */
+  --sidebar-ring: rgba(0, 74, 173, 0.5); /* Navy Blue with opacity */
+}
+
+@theme inline {
+  /* Updated font variable to use Poppins instead of Inter */
+  --font-sans: var(--font-poppins);
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
