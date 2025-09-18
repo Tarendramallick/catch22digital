@@ -13,7 +13,7 @@ export default function ServicesPage() {
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-black mb-6">
+            <h1 className="text-4xl md:text-6xl font-medium text-black mb-6">
               Our <span className="text-[#004aad]">Services</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -31,7 +31,7 @@ export default function ServicesPage() {
             <Card className="border-[#e5e7eb] hover:shadow-lg transition-shadow">
               <CardContent className="p-8">
                 <Search className="w-12 h-12 text-[#004aad] mb-6" />
-                <h3 className="text-2xl font-bold text-black mb-4">Search Engine Optimization</h3>
+                <h3 className="text-2xl font-medium text-black mb-4">Search Engine Optimization</h3>
                 <p className="text-gray-600 mb-6">
                   Improve your website's visibility and ranking on search engines with our comprehensive SEO strategies.
                 </p>
@@ -48,7 +48,7 @@ export default function ServicesPage() {
             <Card className="border-[#e5e7eb] hover:shadow-lg transition-shadow">
               <CardContent className="p-8">
                 <MousePointer className="w-12 h-12 text-[#004aad] mb-6" />
-                <h3 className="text-2xl font-bold text-black mb-4">Pay-Per-Click Advertising</h3>
+                <h3 className="text-2xl font-medium text-black mb-4">Pay-Per-Click Advertising</h3>
                 <p className="text-gray-600 mb-6">
                   Drive immediate traffic and conversions with targeted PPC campaigns across Google, Bing, and social
                   platforms.
@@ -66,7 +66,7 @@ export default function ServicesPage() {
             <Card className="border-[#e5e7eb] hover:shadow-lg transition-shadow">
               <CardContent className="p-8">
                 <Share2 className="w-12 h-12 text-[#004aad] mb-6" />
-                <h3 className="text-2xl font-bold text-black mb-4">Social Media Marketing</h3>
+                <h3 className="text-2xl font-medium text-black mb-4">Social Media Marketing</h3>
                 <p className="text-gray-600 mb-6">
                   Build your brand presence and engage with your audience across all major social media platforms.
                 </p>
@@ -83,7 +83,7 @@ export default function ServicesPage() {
             <Card className="border-[#e5e7eb] hover:shadow-lg transition-shadow">
               <CardContent className="p-8">
                 <BarChart3 className="w-12 h-12 text-[#004aad] mb-6" />
-                <h3 className="text-2xl font-bold text-black mb-4">Analytics & Reporting</h3>
+                <h3 className="text-2xl font-medium text-black mb-4">Analytics & Reporting</h3>
                 <p className="text-gray-600 mb-6">
                   Make data-driven decisions with comprehensive analytics and detailed performance reporting.
                 </p>
@@ -100,7 +100,7 @@ export default function ServicesPage() {
             <Card className="border-[#e5e7eb] hover:shadow-lg transition-shadow">
               <CardContent className="p-8">
                 <Mail className="w-12 h-12 text-[#004aad] mb-6" />
-                <h3 className="text-2xl font-bold text-black mb-4">Email Marketing</h3>
+                <h3 className="text-2xl font-medium text-black mb-4">Email Marketing</h3>
                 <p className="text-gray-600 mb-6">
                   Nurture leads and retain customers with personalized email campaigns that drive results.
                 </p>
@@ -117,7 +117,7 @@ export default function ServicesPage() {
             <Card className="border-[#e5e7eb] hover:shadow-lg transition-shadow">
               <CardContent className="p-8">
                 <Smartphone className="w-12 h-12 text-[#004aad] mb-6" />
-                <h3 className="text-2xl font-bold text-black mb-4">Web Development</h3>
+                <h3 className="text-2xl font-medium text-black mb-4">Web Development</h3>
                 <p className="text-gray-600 mb-6">
                   Create fast, responsive, and conversion-optimized websites that represent your brand perfectly.
                 </p>
@@ -137,7 +137,7 @@ export default function ServicesPage() {
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#e5e7eb]">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Ready to Get Started?</h2>
+          <h2 className="text-3xl md:text-4xl font-medium text-black mb-6">Ready to Get Started?</h2>
           <p className="text-xl text-gray-600 mb-8">
             Let's discuss how our services can help grow your business. Get a free consultation today.
           </p>

@@ -13,7 +13,7 @@ export default function AboutPage() {
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-black mb-6">
+            <h1 className="text-4xl md:text-6xl font-medium text-black mb-6">
               About <span className="text-[#004aad]">Catch22Digital</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -29,7 +29,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Our Story</h2>
+              <h2 className="text-3xl md:text-4xl font-medium text-black mb-6">Our Story</h2>
               <p className="text-gray-600 mb-6">
                 Founded in 2018, Catch22Digital emerged from a simple belief: every business deserves exceptional
                 digital marketing that drives real results. We started as a small team of passionate marketers and have
@@ -57,7 +57,7 @@ export default function AboutPage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Our Values</h2>
+            <h2 className="text-3xl md:text-4xl font-medium text-black mb-6">Our Values</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               These core principles guide everything we do and shape how we work with our clients.
             </p>
@@ -67,7 +67,7 @@ export default function AboutPage() {
             <Card className="border-[#e5e7eb] hover:shadow-lg transition-shadow">
               <CardContent className="p-6 text-center">
                 <CheckCircle className="w-12 h-12 text-[#004aad] mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-black mb-3">Transparency</h3>
+                <h3 className="text-xl font-medium text-black mb-3">Transparency</h3>
                 <p className="text-gray-600">Clear communication and honest reporting on all campaigns and results.</p>
               </CardContent>
             </Card>
@@ -75,7 +75,7 @@ export default function AboutPage() {
             <Card className="border-[#e5e7eb] hover:shadow-lg transition-shadow">
               <CardContent className="p-6 text-center">
                 <Users className="w-12 h-12 text-[#004aad] mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-black mb-3">Partnership</h3>
+                <h3 className="text-xl font-medium text-black mb-3">Partnership</h3>
                 <p className="text-gray-600">
                   We work as an extension of your team, invested in your long-term success.
                 </p>
@@ -85,7 +85,7 @@ export default function AboutPage() {
             <Card className="border-[#e5e7eb] hover:shadow-lg transition-shadow">
               <CardContent className="p-6 text-center">
                 <Target className="w-12 h-12 text-[#004aad] mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-black mb-3">Results-Driven</h3>
+                <h3 className="text-xl font-medium text-black mb-3">Results-Driven</h3>
                 <p className="text-gray-600">Every strategy is designed with measurable outcomes and ROI in mind.</p>
               </CardContent>
             </Card>
@@ -93,7 +93,7 @@ export default function AboutPage() {
             <Card className="border-[#e5e7eb] hover:shadow-lg transition-shadow">
               <CardContent className="p-6 text-center">
                 <Award className="w-12 h-12 text-[#004aad] mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-black mb-3">Excellence</h3>
+                <h3 className="text-xl font-medium text-black mb-3">Excellence</h3>
                 <p className="text-gray-600">
                   We continuously improve and stay ahead of industry trends and best practices.
                 </p>
@@ -107,7 +107,7 @@ export default function AboutPage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#e5e7eb]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Meet Our Team</h2>
+            <h2 className="text-3xl md:text-4xl font-medium text-black mb-6">Meet Our Team</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Our diverse team of experts brings together decades of experience in digital marketing, strategy, and
               business growth.
@@ -139,7 +139,7 @@ export default function AboutPage() {
                     alt={member.name}
                     className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
                   />
-                  <h3 className="text-xl font-semibold text-black mb-2">{member.name}</h3>
+                  <h3 className="text-xl font-medium text-black mb-2">{member.name}</h3>
                   <p className="text-[#004aad] font-medium">{member.role}</p>
                 </CardContent>
               </Card>

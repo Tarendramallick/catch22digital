@@ -123,5 +123,17 @@
   }
   body {
     @apply bg-background text-foreground font-sans;
+    /* Set default font weight to light for thinner typography */
+    font-weight: 300;
+  }
+
+  /* Override default heading weights to be thinner */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 400;
   }
 }

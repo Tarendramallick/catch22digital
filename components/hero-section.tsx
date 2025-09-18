@@ -10,7 +10,7 @@ export function HeroSection() {
 
       <div className="container mx-auto px-4 relative z-10 text-center">
         <div className="max-w-4xl mx-auto text-white">
-          <h1 className="text-6xl lg:text-7xl font-bold mb-6 text-balance leading-tight">
+          <h1 className="text-6xl lg:text-7xl font-medium mb-6 text-balance leading-tight">
             Designing
             <br />
             for People
@@ -20,7 +20,7 @@ export function HeroSection() {
           </p>
           <Button
             size="lg"
-            className="bg-[#004aad] text-white hover:bg-[#004aad]/90 rounded-full px-8 py-6 text-lg font-semibold"
+            className="bg-[#004aad] text-white hover:bg-[#004aad]/90 rounded-full px-8 py-6 text-lg font-medium"
           >
             Connect with us
           </Button>

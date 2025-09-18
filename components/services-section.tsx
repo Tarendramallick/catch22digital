@@ -52,7 +52,7 @@ export function ServicesSection() {
     <section id="services" className="py-20 bg-[#e5e7eb]/20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-black mb-4">Our Services</h2>
+          <h2 className="text-4xl font-medium text-black mb-4">Our Services</h2>
           <p className="text-xl text-black/70 max-w-3xl mx-auto">
             We deliver comprehensive digital solutions that drive growth, enhance online presence, and maximize your
             business potential through proven strategies and cutting-edge technology.
@@ -75,7 +75,7 @@ export function ServicesSection() {
                 <CardDescription className="text-black/70 leading-relaxed">{service.description}</CardDescription>
 
                 <div className="space-y-2">
-                  <h4 className="font-semibold text-sm text-black">Key Features:</h4>
+                  <h4 className="font-medium text-sm text-black">Key Features:</h4>
                   <ul className="grid grid-cols-2 gap-1 text-sm text-black/70">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center">

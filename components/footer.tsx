@@ -4,14 +4,14 @@ function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">CATCH22DIGITAL</h3>
+            <h3 className="text-xl font-medium mb-4">CATCH22DIGITAL</h3>
             <p className="text-white/80">
               Breaking digital barriers with innovative solutions and strategic expertise.
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Services</h4>
+            <h4 className="font-medium mb-4">Services</h4>
             <ul className="space-y-2 text-white/80">
               <li>SEO Optimization</li>
               <li>Marketing Strategy</li>
@@ -21,7 +21,7 @@ function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Company</h4>
+            <h4 className="font-medium mb-4">Company</h4>
             <ul className="space-y-2 text-white/80">
               <li>About Us</li>
               <li>Our Team</li>
@@ -31,7 +31,7 @@ function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Connect</h4>
+            <h4 className="font-medium mb-4">Connect</h4>
             <ul className="space-y-2 text-white/80">
               <li>LinkedIn</li>
               <li>Twitter</li>

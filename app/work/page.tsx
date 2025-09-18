@@ -13,7 +13,7 @@ export default function WorkPage() {
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-black mb-6">
+            <h1 className="text-4xl md:text-6xl font-medium text-black mb-6">
               Our <span className="text-[#004aad]">Work</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -40,22 +40,22 @@ export default function WorkPage() {
                 </div>
               </div>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-black mb-4">Fashion Retailer Increases Revenue by 340%</h3>
+                <h3 className="text-2xl font-medium text-black mb-4">Fashion Retailer Increases Revenue by 340%</h3>
                 <p className="text-gray-600 mb-6">
                   Complete digital transformation including SEO optimization, PPC campaigns, and social media strategy
                   for a growing fashion brand.
                 </p>
                 <div className="grid grid-cols-3 gap-4 mb-6">
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-[#004aad]">340%</div>
+                    <div className="text-2xl font-medium text-[#004aad]">340%</div>
                     <div className="text-sm text-gray-600">Revenue Growth</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-[#004aad]">250%</div>
+                    <div className="text-2xl font-medium text-[#004aad]">250%</div>
                     <div className="text-sm text-gray-600">Traffic Increase</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-[#004aad]">180%</div>
+                    <div className="text-2xl font-medium text-[#004aad]">180%</div>
                     <div className="text-sm text-gray-600">Conversion Rate</div>
                   </div>
                 </div>
@@ -77,22 +77,22 @@ export default function WorkPage() {
                 </div>
               </div>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-black mb-4">SaaS Startup Achieves 500% Lead Growth</h3>
+                <h3 className="text-2xl font-medium text-black mb-4">SaaS Startup Achieves 500% Lead Growth</h3>
                 <p className="text-gray-600 mb-6">
                   Strategic content marketing and lead generation campaign that transformed a startup into an industry
                   leader.
                 </p>
                 <div className="grid grid-cols-3 gap-4 mb-6">
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-[#004aad]">500%</div>
+                    <div className="text-2xl font-medium text-[#004aad]">500%</div>
                     <div className="text-sm text-gray-600">Lead Growth</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-[#004aad]">85%</div>
+                    <div className="text-2xl font-medium text-[#004aad]">85%</div>
                     <div className="text-sm text-gray-600">Cost Reduction</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-[#004aad]">12x</div>
+                    <div className="text-2xl font-medium text-[#004aad]">12x</div>
                     <div className="text-sm text-gray-600">ROI Improvement</div>
                   </div>
                 </div>
@@ -130,7 +130,7 @@ export default function WorkPage() {
                   <div className="bg-[#004aad] text-white px-3 py-1 rounded-full text-sm font-medium inline-block mb-4">
                     {study.category}
                   </div>
-                  <h3 className="text-xl font-bold text-black mb-3">{study.title}</h3>
+                  <h3 className="text-xl font-medium text-black mb-3">{study.title}</h3>
                   <div className="flex items-center mb-3">
                     <TrendingUp className="w-5 h-5 text-[#004aad] mr-2" />
                     <span className="text-[#004aad] font-semibold">{study.metric}</span>
@@ -153,7 +153,7 @@ export default function WorkPage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#e5e7eb]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Results That Speak for Themselves</h2>
+            <h2 className="text-3xl md:text-4xl font-medium text-black mb-6">Results That Speak for Themselves</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Our data-driven approach consistently delivers measurable results for our clients.
             </p>
@@ -161,19 +161,19 @@ export default function WorkPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-[#004aad] mb-2">250+</div>
+              <div className="text-4xl md:text-5xl font-medium text-[#004aad] mb-2">250+</div>
               <div className="text-gray-600">Successful Campaigns</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-[#004aad] mb-2">$50M+</div>
+              <div className="text-4xl md:text-5xl font-medium text-[#004aad] mb-2">$50M+</div>
               <div className="text-gray-600">Revenue Generated</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-[#004aad] mb-2">300%</div>
+              <div className="text-4xl md:text-5xl font-medium text-[#004aad] mb-2">300%</div>
               <div className="text-gray-600">Average ROI</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-[#004aad] mb-2">98%</div>
+              <div className="text-4xl md:text-5xl font-medium text-[#004aad] mb-2">98%</div>
               <div className="text-gray-600">Client Satisfaction</div>
             </div>
           </div>

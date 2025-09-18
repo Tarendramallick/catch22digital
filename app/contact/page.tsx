@@ -13,7 +13,7 @@ export default function ContactPage() {
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-black mb-6">
+            <h1 className="text-4xl md:text-6xl font-medium text-black mb-6">
               Get In <span className="text-[#004aad]">Touch</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -31,7 +31,7 @@ export default function ContactPage() {
             {/* Contact Form */}
             <Card className="border-[#e5e7eb]">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-black mb-6">Send Us a Message</h2>
+                <h2 className="text-2xl font-medium text-black mb-6">Send Us a Message</h2>
                 <form className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
@@ -100,7 +100,7 @@ export default function ContactPage() {
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-2xl font-bold text-black mb-6">Contact Information</h2>
+                <h2 className="text-2xl font-medium text-black mb-6">Contact Information</h2>
                 <p className="text-gray-600 mb-8">
                   We're here to help you succeed. Reach out to us through any of these channels and we'll get back to
                   you within 24 hours.
@@ -112,7 +112,7 @@ export default function ContactPage() {
                   <CardContent className="p-6 flex items-start space-x-4">
                     <MapPin className="w-6 h-6 text-[#004aad] mt-1" />
                     <div>
-                      <h3 className="font-semibold text-black mb-1">Office Address</h3>
+                      <h3 className="font-medium text-black mb-1">Office Address</h3>
                       <p className="text-gray-600">
                         123 Digital Avenue
                         <br />
@@ -128,7 +128,7 @@ export default function ContactPage() {
                   <CardContent className="p-6 flex items-start space-x-4">
                     <Phone className="w-6 h-6 text-[#004aad] mt-1" />
                     <div>
-                      <h3 className="font-semibold text-black mb-1">Phone Number</h3>
+                      <h3 className="font-medium text-black mb-1">Phone Number</h3>
                       <p className="text-gray-600">+1 (555) 123-4567</p>
                     </div>
                   </CardContent>
@@ -138,7 +138,7 @@ export default function ContactPage() {
                   <CardContent className="p-6 flex items-start space-x-4">
                     <Mail className="w-6 h-6 text-[#004aad] mt-1" />
                     <div>
-                      <h3 className="font-semibold text-black mb-1">Email Address</h3>
+                      <h3 className="font-medium text-black mb-1">Email Address</h3>
                       <p className="text-gray-600">hello@catch22digital.com</p>
                     </div>
                   </CardContent>
@@ -148,7 +148,7 @@ export default function ContactPage() {
                   <CardContent className="p-6 flex items-start space-x-4">
                     <Clock className="w-6 h-6 text-[#004aad] mt-1" />
                     <div>
-                      <h3 className="font-semibold text-black mb-1">Business Hours</h3>
+                      <h3 className="font-medium text-black mb-1">Business Hours</h3>
                       <p className="text-gray-600">
                         Monday - Friday: 9:00 AM - 6:00 PM
                         <br />
@@ -164,7 +164,7 @@ export default function ContactPage() {
               {/* Quick Response Promise */}
               <Card className="border-[#004aad] bg-[#004aad]/5">
                 <CardContent className="p-6 text-center">
-                  <h3 className="font-bold text-[#004aad] mb-2">Quick Response Guarantee</h3>
+                  <h3 className="font-medium text-[#004aad] mb-2">Quick Response Guarantee</h3>
                   <p className="text-gray-600">
                     We respond to all inquiries within 24 hours during business days. For urgent matters, call us
                     directly.
@@ -180,7 +180,7 @@ export default function ContactPage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#e5e7eb]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Visit Our Office</h2>
+            <h2 className="text-3xl md:text-4xl font-medium text-black mb-6">Visit Our Office</h2>
             <p className="text-xl text-gray-600">
               Located in the heart of the digital marketing district, we're easy to find and always ready to meet.
             </p>

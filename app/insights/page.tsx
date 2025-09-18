@@ -13,7 +13,7 @@ export default function InsightsPage() {
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-black mb-6">
+            <h1 className="text-4xl md:text-6xl font-medium text-black mb-6">
               Marketing <span className="text-[#004aad]">Insights</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -41,7 +41,7 @@ export default function InsightsPage() {
                   <div className="bg-[#004aad] text-white px-3 py-1 rounded-full text-sm font-medium inline-block mb-4 w-fit">
                     Featured
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
+                  <h2 className="text-3xl md:text-4xl font-medium text-black mb-4">
                     The Future of AI in Digital Marketing: 2024 Trends
                   </h2>
                   <p className="text-gray-600 mb-6">
@@ -132,7 +132,7 @@ export default function InsightsPage() {
                   <div className="bg-[#004aad] text-white px-3 py-1 rounded-full text-sm font-medium inline-block mb-4">
                     {article.category}
                   </div>
-                  <h3 className="text-xl font-bold text-black mb-3 line-clamp-2">{article.title}</h3>
+                  <h3 className="text-xl font-medium text-black mb-3 line-clamp-2">{article.title}</h3>
                   <p className="text-gray-600 mb-4 line-clamp-3">{article.excerpt}</p>
                   <div className="flex items-center text-gray-500 text-sm mb-4">
                     <Calendar className="w-4 h-4 mr-2" />
@@ -156,7 +156,7 @@ export default function InsightsPage() {
       {/* Newsletter Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#e5e7eb]">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Stay Updated with Our Newsletter</h2>
+          <h2 className="text-3xl md:text-4xl font-medium text-black mb-6">Stay Updated with Our Newsletter</h2>
           <p className="text-xl text-gray-600 mb-8">
             Get the latest marketing insights, tips, and strategies delivered directly to your inbox every week.
           </p>
