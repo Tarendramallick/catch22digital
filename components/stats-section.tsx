@@ -29,25 +29,25 @@ function useCounter(end: number, duration = 2000) {
 }
 
 export function StatsSection() {
-  const yearsCount = useCounter(15)
-  const clientsCount = useCounter(500)
-  const countriesCount = useCounter(50)
+  const yearsCount = useCounter(54)
+  const clientsCount = useCounter(12000)
+  const countriesCount = useCounter(100)
 
   return (
-    <section className="bg-gray-900 py-20">
+    <section className="bg-black py-20">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="text-center">
-            <div className="text-6xl font-bold text-primary mb-4">{yearsCount}+</div>
-            <div className="text-white text-xl">Years</div>
+          <div className="bg-[#004aad] p-8 rounded-lg text-center">
+            <div className="text-6xl font-light text-white mb-4">{yearsCount}</div>
+            <div className="text-white text-xl font-light">Years</div>
           </div>
-          <div className="text-center">
-            <div className="text-6xl font-bold text-primary mb-4">{clientsCount}+</div>
-            <div className="text-white text-xl">Clients</div>
+          <div className="bg-[#004aad] p-8 rounded-lg text-center">
+            <div className="text-6xl font-light text-white mb-4">{clientsCount.toLocaleString()}</div>
+            <div className="text-white text-xl font-light">Experts</div>
           </div>
-          <div className="text-center">
-            <div className="text-6xl font-bold text-primary mb-4">{countriesCount}+</div>
-            <div className="text-white text-xl">Countries</div>
+          <div className="bg-[#004aad] p-8 rounded-lg text-center">
+            <div className="text-6xl font-light text-white mb-4">{countriesCount}+</div>
+            <div className="text-white text-xl font-light">Countries</div>
           </div>
         </div>
       </div>
