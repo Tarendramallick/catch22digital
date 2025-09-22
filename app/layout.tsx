@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "Catch22 Digital - Professional Digital Marketing Agency",
   description:
     "Expert digital marketing services including SEO, marketing strategies, data analysis, web development, and LLM optimization.",
-  generator: "v0.app",
+  generator: "tarendra-mallick.vercel.app",
 }
 
 export default function RootLayout({
