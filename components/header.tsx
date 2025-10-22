@@ -2,24 +2,28 @@
 
 import { Button } from "@/components/ui/button"
 import { useState, useEffect } from "react"
+import { Menu, X } from "lucide-react"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 function Header() {
   const [isVisible, setIsVisible] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
   const [hasBackground, setHasBackground] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const pathname = usePathname()
 
   useEffect(() => {
     const controlHeader = () => {
       const currentScrollY = window.scrollY
 
-      setHasBackground(currentScrollY > 50)
+      // ensure background on non-home pages OR when scrolled
+      const shouldBg = currentScrollY > 50 || pathname !== "/"
+      setHasBackground(shouldBg)
 
-      // Show header when at top of page
       if (currentScrollY < 10) {
         setIsVisible(true)
-      }
-      // Hide header when scrolling down, show when scrolling up
-      else if (currentScrollY > lastScrollY && currentScrollY > 100) {
+      } else if (currentScrollY > lastScrollY && currentScrollY > 100) {
         setIsVisible(false)
       } else if (currentScrollY < lastScrollY) {
         setIsVisible(true)
@@ -28,9 +32,10 @@ function Header() {
       setLastScrollY(currentScrollY)
     }
 
+    controlHeader()
     window.addEventListener("scroll", controlHeader)
     return () => window.removeEventListener("scroll", controlHeader)
-  }, [lastScrollY])
+  }, [lastScrollY, pathname])
 
   return (
     <header
@@ -39,59 +44,135 @@ function Header() {
       } ${hasBackground ? "bg-white/95 backdrop-blur-md shadow-lg" : ""}`}
     >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="flex items-center space-x-2">
+        <Link href="/" className="flex items-center space-x-2" aria-label="Go to homepage">
           <h1 className={`text-2xl font-medium transition-colors ${hasBackground ? "text-[#004aad]" : "text-white"}`}>
             CATCH22
           </h1>
-        </div>
+        </Link>
 
+        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <a
+          <Link
             href="/about"
             className={`hover:text-[#004aad] transition-colors font-medium ${
               hasBackground ? "text-gray-800" : "text-white"
             }`}
           >
             About
-          </a>
-          <a
+          </Link>
+          <Link
             href="/services"
             className={`hover:text-[#004aad] transition-colors font-medium ${
               hasBackground ? "text-gray-800" : "text-white"
             }`}
           >
             Services
-          </a>
-          <a
+          </Link>
+          <Link
             href="/work"
             className={`hover:text-[#004aad] transition-colors font-medium ${
               hasBackground ? "text-gray-800" : "text-white"
             }`}
           >
             Work
-          </a>
-          <a
+          </Link>
+          <Link
+            href="/blog"
+            className={`hover:text-[#004aad] transition-colors font-medium ${
+              hasBackground ? "text-gray-800" : "text-white"
+            }`}
+          >
+            Blog
+          </Link>
+          <Link
             href="/insights"
             className={`hover:text-[#004aad] transition-colors font-medium ${
               hasBackground ? "text-gray-800" : "text-white"
             }`}
           >
             Insights
-          </a>
-          <a
+          </Link>
+          <Link
             href="/contact"
             className={`hover:text-[#004aad] transition-colors font-medium ${
               hasBackground ? "text-gray-800" : "text-white"
             }`}
           >
             Contact
-          </a>
+          </Link>
         </nav>
 
-        <Button className="bg-[#004aad] text-white hover:bg-[#004aad]/90 rounded-full px-6 font-medium">
-          <a href="/contact">Get in touch</a>
-        </Button>
+        <div className="flex items-center space-x-4">
+          <Button className="hidden md:block bg-[#004aad] text-white hover:bg-[#004aad]/90 rounded-full px-6 font-medium">
+            <Link href="/contact">Get in touch</Link>
+          </Button>
+
+          <button
+            className={`md:hidden p-2 transition-colors ${hasBackground ? "text-gray-800" : "text-white"}`}
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle mobile menu"
+            aria-expanded={isMobileMenuOpen}
+            aria-controls="mobile-nav"
+          >
+            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
       </div>
+
+      {isMobileMenuOpen && (
+        <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-gray-200">
+          <nav id="mobile-nav" className="container mx-auto px-4 py-4 flex flex-col space-y-4">
+            <Link
+              href="/about"
+              className="text-gray-800 hover:text-[#004aad] transition-colors font-medium py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              About
+            </Link>
+            <Link
+              href="/services"
+              className="text-gray-800 hover:text-[#004aad] transition-colors font-medium py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Services
+            </Link>
+            <Link
+              href="/work"
+              className="text-gray-800 hover:text-[#004aad] transition-colors font-medium py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Work
+            </Link>
+            <Link
+              href="/blog"
+              className="text-gray-800 hover:text-[#004aad] transition-colors font-medium py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Blog
+            </Link>
+            <Link
+              href="/insights"
+              className="text-gray-800 hover:text-[#004aad] transition-colors font-medium py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Insights
+            </Link>
+            <Link
+              href="/contact"
+              className="text-gray-800 hover:text-[#004aad] transition-colors font-medium py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Contact
+            </Link>
+            <Button
+              className="bg-[#004aad] text-white hover:bg-[#004aad]/90 rounded-full px-6 font-medium mt-4"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <Link href="/contact">Get in touch</Link>
+            </Button>
+          </nav>
+        </div>
+      )}
     </header>
   )
 }

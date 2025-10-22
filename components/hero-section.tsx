@@ -21,32 +21,29 @@ export function HeroSection() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-2xl text-white">
           <h1
-            className={`text-6xl lg:text-7xl font-light mb-6 text-balance leading-tight transition-all duration-1000 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-            }`}
+            className={`text-6xl lg:text-7xl font-light mb-6 text-balance leading-tight transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
           >
             <span
-              className={`inline-block transition-all duration-1000 delay-200 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              }`}
+              className={`inline-block transition-all duration-1000 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
             >
-              Designing
+              Delivering results
             </span>
             <br />
             <span
-              className={`inline-block transition-all duration-1000 delay-400 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              }`}
+              className={`inline-block transition-all duration-1000 delay-400 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
             >
-              for People
+              that count
             </span>
           </h1>
           <p
-            className={`text-xl text-white/90 mb-8 max-w-xl text-pretty leading-relaxed transition-all duration-1000 delay-600 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-            }`}
+            className={`text-xl text-white/90 mb-8 max-w-xl text-pretty leading-relaxed transition-all duration-1000 delay-600 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
           >
-            We pioneer in media to build modern businesses by getting brands closer to the people that matter.
+            {
+              "At CATCH22DIGITAL, We pride ourselves in our craft. Showing up and knocking it out of the park by overdelivering is what we live by. We design experiences, not just media strategies. "
+            }
+            {
+              "We start by targeting the clients' desired growth results. Our team, made up of marketing and research experts, study the impacts of brand, performance and customer communication to achieve the goals set by the clients'."
+            }
           </p>
           <div
             className={`transition-all duration-1000 delay-800 ${

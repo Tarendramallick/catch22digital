@@ -1,5 +1,6 @@
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+import PageHero from "@/components/page-hero"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Calendar, User, ArrowRight } from "lucide-react"
@@ -9,20 +10,10 @@ export default function InsightsPage() {
     <div className="min-h-screen bg-white">
       <Header />
 
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-medium text-black mb-6">
-              Marketing <span className="text-[#004aad]">Insights</span>
-            </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Stay ahead of the curve with our latest insights, trends, and strategies in digital marketing and business
-              growth.
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        title="Marketing Insights"
+        subtitle="Stay ahead of the curve with our latest insights, trends, and strategies in digital marketing and business growth."
+      />
 
       {/* Featured Article */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">

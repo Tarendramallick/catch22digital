@@ -1,5 +1,6 @@
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+import PageHero from "@/components/page-hero"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Search, MousePointer, Share2, BarChart3, Mail, Smartphone } from "lucide-react"
@@ -10,19 +11,10 @@ export default function ServicesPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-medium text-black mb-6">
-              Our <span className="text-[#004aad]">Services</span>
-            </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive digital marketing solutions designed to grow your business and maximize your online
-              presence.
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        title="Our Services"
+        subtitle="Comprehensive digital marketing solutions designed to grow your business and maximize your online presence."
+      />
 
       {/* Services Grid */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">

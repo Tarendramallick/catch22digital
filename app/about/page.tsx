@@ -1,5 +1,6 @@
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+import PageHero from "@/components/page-hero"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle, Users, Target, Award } from "lucide-react"
@@ -10,19 +11,10 @@ export default function AboutPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-medium text-black mb-6">
-              About <span className="text-[#004aad]">Catch22Digital</span>
-            </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We're a team of digital marketing experts passionate about helping businesses grow through innovative
-              strategies and data-driven results.
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        title="About Catch22Digital"
+        subtitle="We're a team of digital marketing experts passionate about helping businesses grow through innovative strategies and data-driven results."
+      />
 
       {/* Story Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#e5e7eb]">

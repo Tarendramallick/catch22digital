@@ -1,5 +1,6 @@
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+import PageHero from "@/components/page-hero"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowUpRight, TrendingUp } from "lucide-react"
@@ -10,19 +11,10 @@ export default function WorkPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-medium text-black mb-6">
-              Our <span className="text-[#004aad]">Work</span>
-            </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Explore our portfolio of successful digital marketing campaigns and the measurable results we've achieved
-              for our clients.
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        title="Our Work"
+        subtitle="Explore our portfolio of successful digital marketing campaigns and the measurable results we've achieved for our clients."
+      />
 
       {/* Case Studies */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
